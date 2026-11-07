@@ -1,0 +1,237 @@
+[
+  {
+    "id": "show-mangueirao-2027",
+    "title": "Show Nacional - Verão Amazônico 2027",
+    "category": "show",
+    "date": "2027-02-23",
+    "time": "18:00",
+    "location": "Estádio Olímpico do Pará - Mangueirão, Belém-PA",
+    "description": "O maior palco do Norte recebe os principais artistas nacionais para uma noite inesquecível no Estádio do Mangueirão. Estrutura completa com praça de alimentação, espaço family e after party. Traga sua energia para celebrar o verão paraense!",
+    "imageUrl": "/images/eventos/show-mangueirao-2027.png",
+    "banner": "/images/banners/festival-no-mangueirao.jpeg"
+  },
+  {
+    "id": "teatro-amazonia-em-cena",
+    "title": "Espetáculo \"Amazônia em Cena\"",
+    "category": "teatro",
+    "date": "2026-12-08",
+    "time": "19:30",
+    "location": "Theatro da Paz - Praça da República, Belém-PA",
+    "description": "Espetáculo teatral que homenageia as lendas e mitos da Amazônia, com figurinos inspirados na cultura marajoara e trilha sonora ao vivo. Apresentação única no mais belo teatro da região Norte, patrimônio histórico de Belém.",
+    "imageUrl": "/images/eventos/teatro-amazonia-em-cena.png",
+    "banner": "/images/banners/show-no-teatro.jpeg"
+  },
+  {
+    "id": "festival-sabores-do-para",
+    "title": "Festival Gastronômico Sabores do Pará",
+    "category": "culinario",
+    "date": "2027-01-05",
+    "time": "17:00",
+    "location": "Hangar Centro de Convenções - Belém-PA",
+    "description": "O maior festival de culinária paraense do ano! Mais de 30 chefs apresentando pratos típicos como tacacá, maniçoba, pato no tucupi e açaí. Oficinas de culinária, degustações e concurso de melhor prato. Evento ideal para toda família.",
+    "imageUrl": "/images/eventos/festival-sabores-do-para.jpeg",
+    "banner": "/images/banners/festival-gastronomico.jpeg"
+  },
+  {
+    "id": "exposicao-raizes-da-amazonia",
+    "title": "Exposição \"Raízes da Amazônia\"",
+    "category": "museu",
+    "date": "2027-01-18",
+    "time": "10:00",
+    "location": "Museu Paraense Emílio Goeldi - Av. Magalhães Barata, 376, São Brás",
+    "description": "Nova exposição permanente com acervo de cerâmica marajoara, artefatos indígenas e trajes típicos paraenses. Visita guiada com curadores do museu mais antigo da Amazônia. Entrada gratuita para estudantes.",
+    "imageUrl": "/images/eventos/exposicao-raizes-da-amazonia.jpeg",
+    "banner": "/images/banners/evento-no-museu.jpeg"
+  },
+  {
+    "id": "palestra-cultura-paraense",
+    "title": "Palestra: Cultura Paraense - História e Tradições",
+    "category": "palestras",
+    "date": "2025-12-10",
+    "time": "14:00",
+    "location": "Museu do Estado do Pará - MEP, Belém-PA",
+    "description": "Uma jornada pela história, cultura, tradições e manifestações artísticas do Pará. Palestrante especialista em folclore amazônico aborda Círio de Nazaré, Carimbó, Bumba Meu Boi e artes visuais paraenses. Vagas limitadas, inscrições gratuitas.",
+    "imageUrl": "/images/eventos/palestra-cultura-paraense.png",
+    "banner": "/images/banners/palestras-cultura-paraense.png"
+  },
+  {
+    "id": "festival-de-verao-2027",
+    "title": "Festival de Verão 2027",
+    "category": "show",
+    "date": "2027-01-08",
+    "time": "19:00",
+    "location": "Praça de Eventos",
+    "description": "Prepare-se para uma noite inesquecível de música, alegria e diversão! O Festival de Verão 2027 reúne artistas regionais, apresentações ao vivo e atrações culturais para celebrar o melhor da temporada.",
+    "imageUrl": "/images/eventos/festival-de-verao-2027.jpeg"
+  },
+  {
+    "id": "noite-do-samba-e-pagode",
+    "title": "Noite do Samba e Pagode",
+    "category": "show",
+    "date": "2027-01-22",
+    "time": "20:00",
+    "location": "Arena Cultural",
+    "description": "Uma noite dedicada aos grandes sucessos do samba e pagode brasileiro. Venha cantar, dançar e aproveitar apresentações musicais em um ambiente animado, cheio de energia e descontração.",
+    "imageUrl": "/images/eventos/noite-do-samba-e-pagode.jpeg"
+  },
+  {
+    "id": "festival-musical-de-carnaval",
+    "title": "Festival Musical de Carnaval",
+    "category": "show",
+    "date": "2027-02-06",
+    "time": "18:00",
+    "location": "Parque da Cidade",
+    "description": "Entre no ritmo do Carnaval com uma programação repleta de música, cores e alegria. O festival reúne bandas, apresentações especiais e muita animação para celebrar uma das maiores festas brasileiras.",
+    "imageUrl": "/images/eventos/festival-musical-de-carnaval.jpeg"
+  },
+  {
+    "id": "encontro-de-fe-e-esperanca",
+    "title": "Encontro de Fé e Esperança",
+    "category": "Religioso",
+    "date": "2027-01-10",
+    "time": "18:00",
+    "location": "Centro de Convenções",
+    "description": "Um momento especial de espiritualidade, união e fortalecimento da fé. O encontro contará com louvores, reflexões e mensagens inspiradoras para renovar a esperança e compartilhar experiências.",
+    "imageUrl": "/images/eventos/encontro-de-fe-e-esperanca.jpeg"
+  },
+  {
+    "id": "festival-de-musica-gospel",
+    "title": "Festival de Música Gospel",
+    "category": "Religioso",
+    "date": "2027-01-24",
+    "time": "19:00",
+    "location": "Praça Central",
+    "description": "Uma celebração de fé por meio da música gospel. O festival reúne apresentações de grupos musicais, momentos de louvor e mensagens de esperança em uma noite especial para toda a comunidade.",
+    "imageUrl": "/images/eventos/festival-de-musica-gospel.jpeg"
+  },
+  {
+    "id": "congresso-de-renovacao-espiritual",
+    "title": "Congresso de Renovação Espiritual",
+    "category": "Religioso",
+    "date": "2027-02-14",
+    "time": "09:00",
+    "location": "Auditório Municipal",
+    "description": "Um encontro dedicado ao crescimento espiritual e à reflexão pessoal. A programação inclui palestras, mensagens inspiradoras e atividades que promovem a fé, a união e a renovação interior.",
+    "imageUrl": "/images/eventos/congresso-de-renovacao-espiritual.jpeg"
+  },
+  {
+    "id": "o-misterio-do-teatro-antigo",
+    "title": "O Mistério do Teatro Antigo",
+    "category": "teatro",
+    "date": "2027-01-12",
+    "time": "19:30",
+    "location": "Teatro Municipal",
+    "description": "Uma história intrigante que mistura suspense, humor e acontecimentos inesperados. Entre personagens misteriosos e grandes revelações, o espetáculo promete prender a atenção do público do início ao fim.",
+    "imageUrl": "/images/eventos/o-misterio-do-teatro-antigo.jpeg"
+  },
+  {
+    "id": "as-aventuras-do-pequeno-sonhador",
+    "title": "As Aventuras do Pequeno Sonhador",
+    "category": "teatro",
+    "date": "2027-01-30",
+    "time": "16:00",
+    "location": "Centro Cultural",
+    "description": "Um espetáculo infantil cheio de magia, aventura e imaginação. A história acompanha um pequeno sonhador em descobertas surpreendentes, transmitindo mensagens sobre amizade, coragem e criatividade.",
+    "imageUrl": "/images/eventos/as-aventuras-do-pequeno-sonhador.jpeg"
+  },
+  {
+    "id": "comedia-familia-em-apuros",
+    "title": "Comédia: Família em Apuros",
+    "category": "teatro",
+    "date": "2027-02-20",
+    "time": "20:00",
+    "location": "Teatro da Cidade",
+    "description": "Prepare-se para muitas risadas com uma família envolvida em situações inesperadas. Entre confusões, mal-entendidos e momentos divertidos, a comédia apresenta histórias com as quais todos podem se identificar.",
+    "imageUrl": "/images/eventos/comedia-familia-em-apuros.jpeg"
+  },
+  {
+    "id": "festival-gastronomico-de-verao",
+    "title": "Festival Gastronômico de Verão",
+    "category": "culinario",
+    "date": "2027-01-15",
+    "time": "17:00",
+    "location": "Espaço Gastronômico",
+    "description": "Uma experiência gastronômica repleta de sabores, aromas e criatividade. O festival reúne pratos regionais, chefs convidados, receitas especiais e música ao vivo para proporcionar momentos inesquecíveis.",
+    "imageUrl": "/images/eventos/festival-gastronomico-de-verao.jpeg"
+  },
+  {
+    "id": "sabores-da-amazonia",
+    "title": "Sabores da Amazônia",
+    "category": "culinario",
+    "date": "2027-02-05",
+    "time": "18:00",
+    "location": "Feira Cultural",
+    "description": "Descubra a riqueza da culinária amazônica em uma experiência de sabores e tradições. O evento valoriza ingredientes regionais, receitas típicas e a diversidade gastronômica que representa a cultura da Amazônia.",
+    "imageUrl": "/images/eventos/sabores-da-amazonia.jpeg"
+  },
+  {
+    "id": "festival-de-comida-de-rua",
+    "title": "Festival de Comida de Rua",
+    "category": "culinario",
+    "date": "2027-02-21",
+    "time": "16:00",
+    "location": "Praça de Alimentação",
+    "description": "Uma verdadeira celebração da gastronomia de rua, com food trucks, comidas artesanais, lanches especiais e sobremesas irresistíveis. Um ambiente descontraído para reunir amigos e familiares.",
+    "imageUrl": "/images/eventos/festival-de-comida-de-rua.jpeg"
+  },
+  {
+    "id": "exposicao-memorias-da-cidade",
+    "title": "Exposição Memórias da Cidade",
+    "category": "museu",
+    "date": "2027-01-09",
+    "time": "10:00",
+    "location": "Museu Histórico",
+    "description": "Uma viagem pela história da cidade por meio de fotografias, documentos e objetos antigos. A exposição apresenta acontecimentos, personagens e transformações que ajudaram a construir a identidade local.",
+    "imageUrl": "/images/eventos/exposicao-memorias-da-cidade.jpeg"
+  },
+  {
+    "id": "arte-e-cultura-amazonica",
+    "title": "Arte e Cultura Amazônica",
+    "category": "museu",
+    "date": "2027-01-27",
+    "time": "09:00",
+    "location": "Museu de Arte",
+    "description": "Uma exposição dedicada à riqueza artística e cultural da Amazônia. Conheça obras inspiradas nas tradições, nos povos, nas paisagens e nas manifestações culturais que representam a identidade amazônica.",
+    "imageUrl": "/images/eventos/arte-e-cultura-amazonica.jpeg"
+  },
+  {
+    "id": "museu-interativo-ciencia-e-tecnologia",
+    "title": "Museu Interativo: Ciência e Tecnologia",
+    "category": "museu",
+    "date": "2027-02-19",
+    "time": "10:00",
+    "location": "Museu de Ciências",
+    "description": "Explore o universo da ciência e da tecnologia por meio de experiências interativas e atividades educativas. Uma oportunidade para descobrir inovações, compreender fenômenos científicos e despertar a curiosidade.",
+    "imageUrl": "/images/eventos/museu-interativo-ciencia-e-tecnologia.jpeg"
+  },
+  {
+    "id": "inteligencia-artificial-e-o-futuro",
+    "title": "Inteligência Artificial e o Futuro",
+    "category": "palestras",
+    "date": "2027-01-18",
+    "time": "19:00",
+    "location": "Auditório de Tecnologia",
+    "description": "Descubra como a inteligência artificial está transformando empresas, profissões e a sociedade. A palestra aborda inovações tecnológicas, oportunidades e os principais desafios do futuro digital.",
+    "imageUrl": "/images/eventos/inteligencia-artificial-e-o-futuro.jpeg"
+  },
+  {
+    "id": "empreendedorismo-digital-em-2027",
+    "title": "Empreendedorismo Digital em 2027",
+    "category": "palestras",
+    "date": "2027-02-11",
+    "time": "18:30",
+    "location": "Centro Empresarial",
+    "description": "Conheça estratégias para criar, desenvolver e fortalecer negócios no ambiente digital. A palestra apresenta tendências de mercado, oportunidades de empreendedorismo e ferramentas para impulsionar resultados.",
+    "imageUrl": "/images/eventos/empreendedorismo-digital-em-2027.jpeg"
+  },
+  {
+    "id": "marketing-redes-sociais-e-criatividade",
+    "title": "Marketing, Redes Sociais e Criatividade",
+    "category": "palestras",
+    "date": "2027-02-25",
+    "time": "19:00",
+    "location": "Auditório Cultural",
+    "description": "Explore as principais tendências de marketing digital, produção de conteúdo e redes sociais. A palestra apresenta estratégias criativas para fortalecer marcas, alcançar novos públicos e melhorar a comunicação.",
+    "imageUrl": "/images/eventos/marketing-redes-sociais-e-criatividade.jpeg"
+  }
+]
