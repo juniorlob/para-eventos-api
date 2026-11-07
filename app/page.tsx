@@ -1,69 +1,63 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    <main className="home">
+      <header className="hero">
+        <span className="badge">BFF</span>
+        <h1>para-eventos-api</h1>
+        <p>
+          API de eventos culturais do Pará. Os dados são servidos inicialmente a
+          partir de <code>data/events.json</code> e podem ser consumidos pelo app
+          Vue em desenvolvimento.
+        </p>
+      </header>
+
+      <section>
+        <h2>Endpoints</h2>
+        <ul className="endpoints">
+          <li>
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+            <a href="/api/events">
+              <code>GET /api/events</code>
+            </a>
+            <span>Lista paginada de eventos com busca e filtros.</span>
+          </li>
+          <li>
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+            <a href="/api/events/show-mangueirao-2027">
+              <code>GET /api/events/[id]</code>
+            </a>
+            <span>Detalhe de um evento pelo id.</span>
+          </li>
+          <li>
+            <a href="/api/categories">
+              <code>GET /api/categories</code>
+            </a>
+            <span>Categorias disponíveis e quantidade de eventos.</span>
+          </li>
+          <li>
+            <a href="/api/health">
+              <code>GET /api/health</code>
+            </a>
+            <span>Status da API e total de eventos carregados.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Filtros de <code>/api/events</code></h2>
+        <pre>
+          <code>{`/api/events?q=teatro
+/api/events?category=show
+/api/events?featured=true
+/api/events?limit=10&offset=0
+/api/events?category=museu&q=amazonia&limit=5`}</code>
+        </pre>
+      </section>
+
+      <footer>
+        Respostas no formato <code>{`{ data, meta }`}</code> e erros no formato{" "}
+        <code>{`{ error: { code, message } }`}</code>.
+      </footer>
+    </main>
+  )
 }

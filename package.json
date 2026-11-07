@@ -2,11 +2,15 @@
   "name": "para-eventos-api",
   "version": "0.1.0",
   "private": true,
+  "description": "BFF de eventos culturais do Pará, inicialmente servindo dados de um arquivo JSON.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prebuild": "npm run validate:data",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "validate:data": "node scripts/validate-data.mjs"
   },
   "dependencies": {
     "next": "16.4.5",
