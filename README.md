@@ -41,7 +41,7 @@ Lista paginada de eventos.
 | Parâmetro | Tipo | Descrição |
 | --- | --- | --- |
 | `q` | string | Busca no título (ignora acentos e maiúsculas) |
-| `category` | string | Filtra por categoria (`show`, `Religioso`, `teatro`, `culinario`, `museu`, `palestras`) |
+| `category` | string | Filtra por uma ou mais categorias separadas por vírgula (`show`, `Religioso`, `teatro`, `culinario`, `museu`, `palestras`). Semântica OR |
 | `featured` | boolean | `true` retorna apenas eventos com banner |
 | `limit` | inteiro | Itens por página, de 1 a 100 (padrão: 50) |
 | `offset` | inteiro | Itens a pular (padrão: 0) |
@@ -51,6 +51,8 @@ Exemplos:
 ```bash
 curl "http://localhost:3000/api/events"
 curl "http://localhost:3000/api/events?category=teatro"
+curl "http://localhost:3000/api/events?category=show,teatro"
+curl "http://localhost:3000/api/events?category=show&category=museu"
 curl "http://localhost:3000/api/events?q=verao"
 curl "http://localhost:3000/api/events?featured=true"
 curl "http://localhost:3000/api/events?limit=5&offset=10"

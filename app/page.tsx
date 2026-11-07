@@ -48,6 +48,7 @@ export default function Home() {
         <pre>
           <code>{`/api/events?q=teatro
 /api/events?category=show
+/api/events?category=show,teatro
 /api/events?featured=true
 /api/events?limit=10&offset=0
 /api/events?category=museu&q=amazonia&limit=5`}</code>

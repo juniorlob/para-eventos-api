@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
     return jsonError(parsed.code, parsed.message, 400)
   }
 
-  const { q, category, featured, limit, offset } = parsed.query
+  const { q, categories, featured, limit, offset } = parsed.query
 
   try {
     let events = await getAllEvents()
@@ -20,8 +20,8 @@ export async function GET(request: NextRequest) {
       events = events.filter((event) => Boolean(event.banner))
     }
 
-    if (category) {
-      events = events.filter((event) => event.category === category)
+    if (categories.length > 0) {
+      events = events.filter((event) => categories.includes(event.category))
     }
 
     if (q) {
