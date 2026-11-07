@@ -1,8 +1,9 @@
 import type { NextRequest } from "next/server"
 
 import { getAllEvents } from "@/lib/events-repository"
-import { jsonError, jsonOk, preflight } from "@/lib/http"
+import { getPublicBaseUrl, jsonError, jsonOk, preflight } from "@/lib/http"
 import { normalizeText, parseEventsQuery } from "@/lib/query"
+import { toAbsoluteEvent } from "@/lib/serializers"
 
 export async function GET(request: NextRequest) {
   const parsed = parseEventsQuery(request.nextUrl.searchParams)
@@ -12,6 +13,7 @@ export async function GET(request: NextRequest) {
   }
 
   const { q, categories, featured, limit, offset } = parsed.query
+  const baseUrl = getPublicBaseUrl(request)
 
   try {
     let events = await getAllEvents()
@@ -33,14 +35,17 @@ export async function GET(request: NextRequest) {
     const total = events.length
     const page = events.slice(offset, offset + limit)
 
-    return jsonOk(page, {
-      meta: {
-        total,
-        count: page.length,
-        limit,
-        offset,
+    return jsonOk(
+      page.map((event) => toAbsoluteEvent(event, baseUrl)),
+      {
+        meta: {
+          total,
+          count: page.length,
+          limit,
+          offset,
+        },
       },
-    })
+    )
   } catch (error) {
     console.error("[api/events] failed to load events", error)
 

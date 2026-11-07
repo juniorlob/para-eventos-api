@@ -71,8 +71,8 @@ Resposta:
       "time": "18:00",
       "location": "Estádio Olímpico do Pará - Mangueirão, Belém-PA",
       "description": "...",
-      "imageUrl": "/images/eventos/show-mangueirao-2027.png",
-      "banner": "/images/banners/festival-no-mangueirao.jpeg"
+      "imageUrl": "https://para-eventos-api.vercel.app/images/eventos/show-mangueirao-2027.png",
+      "banner": "https://para-eventos-api.vercel.app/images/banners/festival-no-mangueirao.jpeg"
     }
   ],
   "meta": {
@@ -83,6 +83,9 @@ Resposta:
   }
 }
 ```
+
+`imageUrl` e `banner` são retornados como URLs absolutas (veja
+[URLs de imagens](#urls-de-imagens)).
 
 ### `GET /api/events/[id]`
 
@@ -144,6 +147,18 @@ Códigos usados: `INVALID_CATEGORY`, `INVALID_FEATURED`, `INVALID_LIMIT`,
 
 Em desenvolvimento o JSON é relido a cada requisição, então editar o arquivo não
 exige reiniciar o servidor. Em produção a lista é mantida em memória.
+
+## URLs de imagens
+
+Os campos `imageUrl` e `banner` são retornados como URLs absolutas para que o
+frontend, hospedado em outro domínio, carregue as imagens direto da API. A base
+usada é:
+
+1. `PUBLIC_BASE_URL`, quando definida;
+2. a origem da requisição (ex.: `http://localhost:3000` ou o domínio do deploy).
+
+O arquivo `data/events.json` continua com caminhos relativos; a conversão
+acontece apenas na resposta HTTP, então os dados permanecem portáveis.
 
 ## CORS
 
