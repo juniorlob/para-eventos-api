@@ -6,6 +6,24 @@ const CORS_ORIGIN = process.env.CORS_ORIGIN?.trim() || "*"
 
 const CACHE_HEADERS = {
   "Cache-Control": "public, s-maxage=60, stale-while-revalidate=300",
+  Vary: "Origin, Host",
+}
+
+/**
+ * Returns the public base URL used to build absolute asset URLs.
+ *
+ * `PUBLIC_BASE_URL` takes precedence so the canonical domain can be pinned;
+ * otherwise the request origin is used, which keeps localhost and preview
+ * deployments working without extra configuration.
+ */
+export function getPublicBaseUrl(request: Request): string {
+  const configured = process.env.PUBLIC_BASE_URL?.trim()
+
+  if (configured) {
+    return configured.replace(/\/+$/, "")
+  }
+
+  return new URL(request.url).origin
 }
 
 const NO_STORE_HEADERS = {
