@@ -5,7 +5,7 @@ export const MAX_LIMIT = 100
 
 export interface EventsQuery {
   q?: string
-  category?: Category
+  categories: Category[]
   featured: boolean
   limit: number
   offset: number
@@ -39,10 +39,15 @@ function parseInteger(value: string): number | null {
 export function parseEventsQuery(params: URLSearchParams): ParseEventsQueryResult {
   const q = params.get("q")?.trim()
 
-  const categoryParam = params.get("category")?.trim()
-  let category: Category | undefined
+  const categoryParams = params
+    .getAll("category")
+    .flatMap((value) => value.split(","))
+    .map((value) => value.trim())
+    .filter((value) => value !== "")
 
-  if (categoryParam) {
+  const categories: Category[] = []
+
+  for (const categoryParam of categoryParams) {
     const match = CATEGORIES.find(
       (value) => normalizeText(value) === normalizeText(categoryParam),
     )
@@ -55,7 +60,9 @@ export function parseEventsQuery(params: URLSearchParams): ParseEventsQueryResul
       }
     }
 
-    category = match
+    if (!categories.includes(match)) {
+      categories.push(match)
+    }
   }
 
   const featuredParam = params.get("featured")?.trim().toLowerCase()
@@ -99,7 +106,7 @@ export function parseEventsQuery(params: URLSearchParams): ParseEventsQueryResul
     ok: true,
     query: {
       q: q || undefined,
-      category,
+      categories,
       featured,
       limit,
       offset,
